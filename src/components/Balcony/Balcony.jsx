@@ -30,19 +30,11 @@ const BalconyStructure = ({ className }) => {
       {[...Array(6).keys()].map((element, index) => (
         // eslint-disable-next-line react/no-array-index-key
         <React.Fragment key={index}>
-          {index < grassProgress && (
-            <>
-              <GrassTile row={1} column={index + 1} />
-              <GrassTile row={2} column={index + 1} />
-            </>
-          )}
+          <GrassTile row={1} column={index + 1} in={index < grassProgress} />
+          <GrassTile row={2} column={index + 1} in={index < grassProgress} />
 
-          {index >= grassProgress && (
-            <>
-              <StoneTile row={1} column={index + 1} />
-              <StoneTile row={2} column={index + 1} />
-            </>
-          )}
+          <StoneTile row={1} column={index + 1} in={index >= grassProgress} />
+          <StoneTile row={2} column={index + 1} in={index >= grassProgress} />
         </React.Fragment>
       ))}
 
