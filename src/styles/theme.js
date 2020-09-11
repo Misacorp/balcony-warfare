@@ -61,4 +61,8 @@ export default {
       fontFamily: baseFonts.join(','),
     },
   },
+  transition: {
+    timingFunction: 'cubic-bezier(.48,-0.29,.35,1.2)',
+    duration: '500ms',
+  },
 };

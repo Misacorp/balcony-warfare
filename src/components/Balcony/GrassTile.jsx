@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import transition from 'styled-transition-group';
 
-import { ReactComponent as GrassTileImage } from '../../assets/images/SVG/Grass Tile 2.svg';
+import GrassTileImage from '../../assets/images/1x/Grass Tile 2.png';
 
 const TILE_OVERLAP_PERCENT = 8.7;
 const TILE_WIDTH = 100 - 2 * TILE_OVERLAP_PERCENT;
@@ -10,13 +10,13 @@ const TILE_WIDTH = 100 - 2 * TILE_OVERLAP_PERCENT;
 const GrassTileStructure = ({ row, column, className }) => {
   if (column === 0) return null;
 
-  return <GrassTileImage className={className} />;
+  return <img className={className} src={GrassTileImage} alt="Grass" />;
 };
 
 const GrassTile = transition(GrassTileStructure).attrs({
   unmountOnExit: true,
   mountOnEnter: true,
-  timeout: 600,
+  timeout: 1000,
 })`
   z-index: ${({ column }) => 6 - column};
   bottom: 17.4%;
@@ -24,7 +24,7 @@ const GrassTile = transition(GrassTileStructure).attrs({
     ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%,
     ${({ row }) => (row - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%
   );
-  transform-origin: 0 ${({ row }) => (row === 1 ? 100 : 0)}%;
+  transform-origin: 20% ${({ row }) => (row === 1 ? 100 : 0)}%;
   
   &:enter {
     transform: translate(
@@ -38,7 +38,10 @@ const GrassTile = transition(GrassTileStructure).attrs({
       ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%,
       ${({ row }) => (row - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%
     ) scale(1);
-    transition: transform 300ms ease-out;
+    transition-property: transform;
+    transition-duration: ${({ theme }) => theme.transition.duration};
+    transition-timing-function: ${({ theme }) =>
+      theme.transition.timingFunction};
     transition-delay: ${({ row }) => (row === 1 ? 0 : 100)}ms;
   }
       
@@ -54,7 +57,10 @@ const GrassTile = transition(GrassTileStructure).attrs({
       ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%,
       ${({ row }) => (row - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%
     ) scale(0);
-    transition: transform 300ms ease-out;
+    transition-property: transform;
+    transition-duration: ${({ theme }) => theme.transition.duration};
+    transition-timing-function: ${({ theme }) =>
+      theme.transition.timingFunction};
     transition-delay: ${({ row }) => (row === 1 ? 0 : 100)}ms;
   }
 `;

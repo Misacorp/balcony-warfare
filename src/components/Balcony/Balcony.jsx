@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 
@@ -6,23 +6,7 @@ import BalconyBase from './BalconyBase';
 import GrassTile from './GrassTile';
 import StoneTile from './StoneTile';
 
-import useKeyListener from '../hooks/useKeyListener';
-
-const BalconyStructure = ({ className }) => {
-  const [grassProgress, setGrassProgress] = useState(3);
-
-  // Set up key listeners
-  const decrease = useCallback(() => {
-    setGrassProgress(Math.max(grassProgress - 1, 0));
-  }, [grassProgress]);
-
-  const increase = useCallback(() => {
-    setGrassProgress(Math.min(grassProgress + 1, 6));
-  }, [grassProgress]);
-
-  useKeyListener('ArrowLeft', decrease);
-  useKeyListener('ArrowRight', increase);
-
+const BalconyStructure = ({ grassProgress, className }) => {
   return (
     <div className={className}>
       <BalconyBase />
@@ -53,12 +37,14 @@ const Balcony = styled(BalconyStructure)`
 
   margin: auto;
 
-  & > svg {
+  & > svg,
+  & > img {
     position: absolute;
   }
 `;
 
 BalconyStructure.propTypes = {
+  grassProgress: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6]).isRequired,
   className: PropTypes.string,
 };
 

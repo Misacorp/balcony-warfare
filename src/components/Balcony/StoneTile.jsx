@@ -2,9 +2,9 @@ import React from 'react';
 import transition from 'styled-transition-group';
 import PropTypes from 'prop-types';
 
-import { ReactComponent as StoneTileImage } from '../../assets/images/SVG/Stone Tile 2.svg';
+import StoneTileImage from '../../assets/images/1x/Stone Tile 2.png';
 
-const TILE_OVERLAP_PERCENT_X = 0;
+const TILE_OVERLAP_PERCENT_X = 0.5;
 const TILE_OVERLAP_PERCENT_Y = 5;
 const TILE_WIDTH = 100 - 2 * TILE_OVERLAP_PERCENT_X;
 const TILE_HEIGHT = 100 - 2 * TILE_OVERLAP_PERCENT_Y;
@@ -12,13 +12,13 @@ const TILE_HEIGHT = 100 - 2 * TILE_OVERLAP_PERCENT_Y;
 const StoneTileStructure = ({ row, column, className }) => {
   if (column === 0) return null;
 
-  return <StoneTileImage className={className} />;
+  return <img src={StoneTileImage} className={className} alt="Stone" />;
 };
 
 const StoneTile = transition(StoneTileStructure).attrs({
   unmountOnExit: true,
   mountOnEnter: true,
-  timeout: 600,
+  timeout: 1000,
 })`
   z-index: ${({ column }) => 6 - column};
   bottom: 17.4%;
@@ -26,7 +26,7 @@ const StoneTile = transition(StoneTileStructure).attrs({
     ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT_X}%,
     ${({ row }) => (row - 1) * TILE_HEIGHT - TILE_OVERLAP_PERCENT_Y}%
   );
-  transform-origin: 100% ${({ row }) => (row === 1 ? 100 : 0)}%;
+  transform-origin: 80% ${({ row }) => (row === 1 ? 100 : 0)}%;
 
   &:enter {
     transform: translate(
@@ -40,7 +40,10 @@ const StoneTile = transition(StoneTileStructure).attrs({
       ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT_X}%,
       ${({ row }) => (row - 1) * TILE_HEIGHT - TILE_OVERLAP_PERCENT_Y}%
     ) scale(1);
-    transition: transform 300ms ease-out;
+    transition-property: transform;
+    transition-duration: ${({ theme }) => theme.transition.duration};
+    transition-timing-function: ${({ theme }) =>
+      theme.transition.timingFunction};
     transition-delay: ${({ row }) => (row === 1 ? 0 : 100)}ms;
   }
       
@@ -56,7 +59,10 @@ const StoneTile = transition(StoneTileStructure).attrs({
       ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT_X}%,
       ${({ row }) => (row - 1) * TILE_HEIGHT - TILE_OVERLAP_PERCENT_Y}%
     ) scale(0);
-    transition: transform 300ms ease-out;
+    transition-property: transform;
+    transition-duration: ${({ theme }) => theme.transition.duration};
+    transition-timing-function: ${({ theme }) =>
+      theme.transition.timingFunction};
     transition-delay: ${({ row }) => (row === 1 ? 0 : 100)}ms;
   }
 `;
