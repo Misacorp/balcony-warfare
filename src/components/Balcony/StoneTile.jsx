@@ -21,7 +21,7 @@ const StoneTile = transition(StoneTileStructure).attrs({
   timeout: 600,
 })`
   z-index: ${({ column }) => 6 - column};
-  bottom: 2%;
+  bottom: 17.4%;
   transform: translate(
     ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT_X}%,
     ${({ row }) => (row - 1) * TILE_HEIGHT - TILE_OVERLAP_PERCENT_Y}%

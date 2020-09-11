@@ -19,7 +19,7 @@ const GrassTile = transition(GrassTileStructure).attrs({
   timeout: 600,
 })`
   z-index: ${({ column }) => 6 - column};
-  bottom: 0;
+  bottom: 17.4%;
   transform: translate(
     ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%,
     ${({ row }) => (row - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%

@@ -10,6 +10,7 @@ const BalconyBaseStructure = ({ className }) => {
 
 const BalconyBase = styled(BalconyBaseStructure)`
   position: absolute;
+  /* bottom: -18.25%; */
 `;
 
 BalconyBaseStructure.propTypes = {

@@ -48,6 +48,9 @@ const Balcony = styled(BalconyStructure)`
   width: 1002.04px;
   height: 753px;
 
+  overflow: hidden;
+  border: solid 10px #111;
+
   margin: auto;
 
   & > svg {
