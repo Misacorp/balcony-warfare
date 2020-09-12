@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://misacorp.github.io/balcony-warfare/precache-manifest.4b642411c0c391a713692df6913be175.js"
+  "https://misacorp.github.io/balcony-warfare/precache-manifest.41d11ac66d0dcd3fc6148fa967e4a7bb.js"
 );
 
 self.addEventListener('message', (event) => {

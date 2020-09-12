@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f04e1055c6caf305f21a315b12af66c",
+    "revision": "7dfb91e3963d1d2f5a04f6fffa32a6b6",
     "url": "https://misacorp.github.io/balcony-warfare/index.html"
   },
   {
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://misacorp.github.io/balcony-warfare/static/js/2.3b21cf14.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e3cea4eb591edfb815ae",
-    "url": "https://misacorp.github.io/balcony-warfare/static/js/main.aafd50e8.chunk.js"
+    "revision": "c5d7e3ff324b8137bfb7",
+    "url": "https://misacorp.github.io/balcony-warfare/static/js/main.82984c82.chunk.js"
   },
   {
     "revision": "67c3fb80ec8c6cb4884f",
     "url": "https://misacorp.github.io/balcony-warfare/static/js/runtime-main.488c1193.js"
   },
   {
-    "revision": "61e52d877504e6e69088213e978d4ef4",
-    "url": "https://misacorp.github.io/balcony-warfare/static/media/Balcony 3.61e52d87.svg"
+    "revision": "8333234baad3034c38ed43b64482ea6a",
+    "url": "https://misacorp.github.io/balcony-warfare/static/media/Balcony 4.8333234b.svg"
   },
   {
     "revision": "879418cc5d2bb6dfe976ceac38f5a359",
