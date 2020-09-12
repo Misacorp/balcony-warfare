@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "http://localhost:5000/static/js/main.8f0a0ab6.chunk.js",
+    "main.js.map": "http://localhost:5000/static/js/main.8f0a0ab6.chunk.js.map",
+    "runtime-main.js": "http://localhost:5000/static/js/runtime-main.b73660f3.js",
+    "runtime-main.js.map": "http://localhost:5000/static/js/runtime-main.b73660f3.js.map",
+    "static/js/2.a6c2be74.chunk.js": "http://localhost:5000/static/js/2.a6c2be74.chunk.js",
+    "static/js/2.a6c2be74.chunk.js.map": "http://localhost:5000/static/js/2.a6c2be74.chunk.js.map",
+    "index.html": "http://localhost:5000/index.html",
+    "precache-manifest.0620cbdb19909f7e6709a179ffdb1a4d.js": "http://localhost:5000/precache-manifest.0620cbdb19909f7e6709a179ffdb1a4d.js",
+    "service-worker.js": "http://localhost:5000/service-worker.js",
+    "static/js/2.a6c2be74.chunk.js.LICENSE.txt": "http://localhost:5000/static/js/2.a6c2be74.chunk.js.LICENSE.txt",
+    "static/media/Balcony 3.61e52d87.svg": "http://localhost:5000/static/media/Balcony 3.61e52d87.svg",
+    "static/media/Grass Tile 2.png": "http://localhost:5000/static/media/Grass Tile 2.879418cc.png",
+    "static/media/Pyora.png": "http://localhost:5000/static/media/Pyora.b8b29781.png",
+    "static/media/noise_texture.png": "http://localhost:5000/static/media/noise_texture.949c2f47.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b73660f3.js",
+    "static/js/2.a6c2be74.chunk.js",
+    "static/js/main.8f0a0ab6.chunk.js"
+  ]
+}
