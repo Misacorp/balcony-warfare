@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "http://localhost:5000/static/js/main.8f0a0ab6.chunk.js",
-    "main.js.map": "http://localhost:5000/static/js/main.8f0a0ab6.chunk.js.map",
-    "runtime-main.js": "http://localhost:5000/static/js/runtime-main.b73660f3.js",
-    "runtime-main.js.map": "http://localhost:5000/static/js/runtime-main.b73660f3.js.map",
-    "static/js/2.a6c2be74.chunk.js": "http://localhost:5000/static/js/2.a6c2be74.chunk.js",
-    "static/js/2.a6c2be74.chunk.js.map": "http://localhost:5000/static/js/2.a6c2be74.chunk.js.map",
-    "index.html": "http://localhost:5000/index.html",
-    "precache-manifest.0620cbdb19909f7e6709a179ffdb1a4d.js": "http://localhost:5000/precache-manifest.0620cbdb19909f7e6709a179ffdb1a4d.js",
-    "service-worker.js": "http://localhost:5000/service-worker.js",
-    "static/js/2.a6c2be74.chunk.js.LICENSE.txt": "http://localhost:5000/static/js/2.a6c2be74.chunk.js.LICENSE.txt",
-    "static/media/Balcony 3.61e52d87.svg": "http://localhost:5000/static/media/Balcony 3.61e52d87.svg",
-    "static/media/Grass Tile 2.png": "http://localhost:5000/static/media/Grass Tile 2.879418cc.png",
-    "static/media/Pyora.png": "http://localhost:5000/static/media/Pyora.b8b29781.png",
-    "static/media/noise_texture.png": "http://localhost:5000/static/media/noise_texture.949c2f47.png"
+    "main.js": "https://misacorp.github.io/balcony-warfare/static/js/main.aafd50e8.chunk.js",
+    "main.js.map": "https://misacorp.github.io/balcony-warfare/static/js/main.aafd50e8.chunk.js.map",
+    "runtime-main.js": "https://misacorp.github.io/balcony-warfare/static/js/runtime-main.488c1193.js",
+    "runtime-main.js.map": "https://misacorp.github.io/balcony-warfare/static/js/runtime-main.488c1193.js.map",
+    "static/js/2.3b21cf14.chunk.js": "https://misacorp.github.io/balcony-warfare/static/js/2.3b21cf14.chunk.js",
+    "static/js/2.3b21cf14.chunk.js.map": "https://misacorp.github.io/balcony-warfare/static/js/2.3b21cf14.chunk.js.map",
+    "index.html": "https://misacorp.github.io/balcony-warfare/index.html",
+    "precache-manifest.4b642411c0c391a713692df6913be175.js": "https://misacorp.github.io/balcony-warfare/precache-manifest.4b642411c0c391a713692df6913be175.js",
+    "service-worker.js": "https://misacorp.github.io/balcony-warfare/service-worker.js",
+    "static/js/2.3b21cf14.chunk.js.LICENSE.txt": "https://misacorp.github.io/balcony-warfare/static/js/2.3b21cf14.chunk.js.LICENSE.txt",
+    "static/media/Balcony 3.61e52d87.svg": "https://misacorp.github.io/balcony-warfare/static/media/Balcony 3.61e52d87.svg",
+    "static/media/Grass Tile 2.png": "https://misacorp.github.io/balcony-warfare/static/media/Grass Tile 2.879418cc.png",
+    "static/media/Pyora.png": "https://misacorp.github.io/balcony-warfare/static/media/Pyora.b8b29781.png",
+    "static/media/noise_texture.png": "https://misacorp.github.io/balcony-warfare/static/media/noise_texture.949c2f47.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b73660f3.js",
-    "static/js/2.a6c2be74.chunk.js",
-    "static/js/main.8f0a0ab6.chunk.js"
+    "static/js/runtime-main.488c1193.js",
+    "static/js/2.3b21cf14.chunk.js",
+    "static/js/main.aafd50e8.chunk.js"
   ]
 }
