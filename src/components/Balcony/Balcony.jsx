@@ -13,6 +13,7 @@ import Box from './Box';
 import Tire from './Tire';
 import SquarePottedPlant from './SquarePottedPlant';
 import Palm from './Palmu';
+import Palm2 from './Palm2';
 import Pillow from './Pillow';
 import HangingPlant from './HangingPlant';
 import CactusRed from './CactusRed';
@@ -35,6 +36,7 @@ const BalconyStructure = ({ grassProgress, className }) => {
       ))}
 
       <Motor in={grassProgress < 6} />
+      <Palm2 in={grassProgress > 5} />
 
       <Paint color="red" in={grassProgress < 5} />
       <Paint color="black" in={grassProgress < 6} delay={2} />
