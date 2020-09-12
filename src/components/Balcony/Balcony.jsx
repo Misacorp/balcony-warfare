@@ -5,6 +5,9 @@ import PropTypes from 'prop-types';
 import BalconyBase from './BalconyBase';
 import GrassTile from './GrassTile';
 import StoneTile from './StoneTile';
+import Motor from './Motor';
+import Paint from './Paint';
+import FishingRod from './FishingRod';
 
 const BalconyStructure = ({ grassProgress, className }) => {
   return (
@@ -22,7 +25,12 @@ const BalconyStructure = ({ grassProgress, className }) => {
         </React.Fragment>
       ))}
 
-      <p>GrassProgress = {grassProgress}</p>
+      <Motor in={grassProgress < 6} />
+
+      <Paint color="red" in={grassProgress < 5} />
+      <Paint color="black" in={grassProgress < 6} delay={2} />
+
+      <FishingRod in={grassProgress < 4} />
     </div>
   );
 };

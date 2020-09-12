@@ -38,6 +38,7 @@ const Button = styled(ButtonStructure)`
 
   position: relative;
   padding: 1rem;
+  color: ${({ accent, theme }) => theme.palette[accent].main};
   background-color: ${({ theme }) => theme.palette.obsidian.main};
   border-radius: 3px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);

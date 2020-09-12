@@ -1,23 +1,29 @@
 import { css } from 'styled-transition-group';
 
-export default (defaultTranslation) => css`
+export default css`
   &:enter {
-    transform: ${defaultTranslation} scale(0);
+    transform: scale(0);
   }
 
   &:enter-active {
-    transform: ${defaultTranslation} scale(1);
-    transition: transform 300ms ease-out;
-    transition-delay: ${({ row }) => (row === 1 ? 0 : 100)}ms;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: ${({ theme }) => theme.transition.duration};
+    transition-timing-function: ${({ theme }) =>
+      theme.transition.timingFunction};
+    transition-delay: ${({ delay = 1 }) => delay * 100}ms;
   }
 
   &:exit {
-    transform: ${defaultTranslation} scale(1);
+    transform: scale(1);
   }
 
   &:exit-active {
-    transform: ${defaultTranslation} scale(0);
-    transition: transform 300ms ease-out;
-    transition-delay: ${({ row }) => (row === 1 ? 0 : 100)}ms;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: ${({ theme }) => theme.transition.duration};
+    transition-timing-function: ${({ theme }) =>
+      theme.transition.timingFunction};
+    transition-delay: 0;
   }
 `;

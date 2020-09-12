@@ -59,6 +59,7 @@ const StoneTile = transition(StoneTileStructure).attrs({
       ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT_X}%,
       ${({ row }) => (row - 1) * TILE_HEIGHT - TILE_OVERLAP_PERCENT_Y}%
     ) scale(0);
+    z-index: 0;
     transition-property: transform;
     transition-duration: ${({ theme }) => theme.transition.duration};
     transition-timing-function: ${({ theme }) =>

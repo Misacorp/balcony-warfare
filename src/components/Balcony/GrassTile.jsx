@@ -57,6 +57,7 @@ const GrassTile = transition(GrassTileStructure).attrs({
       ${({ column }) => (column - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%,
       ${({ row }) => (row - 1) * TILE_WIDTH - TILE_OVERLAP_PERCENT}%
     ) scale(0);
+    z-index: 0;
     transition-property: transform;
     transition-duration: ${({ theme }) => theme.transition.duration};
     transition-timing-function: ${({ theme }) =>
