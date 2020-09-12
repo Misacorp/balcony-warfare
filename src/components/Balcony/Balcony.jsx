@@ -8,6 +8,9 @@ import StoneTile from './StoneTile';
 import Motor from './Motor';
 import Paint from './Paint';
 import FishingRod from './FishingRod';
+import Wheel from './Wheel';
+import Box from './Box';
+import Tire from './Tire';
 
 const BalconyStructure = ({ grassProgress, className }) => {
   return (
@@ -31,6 +34,15 @@ const BalconyStructure = ({ grassProgress, className }) => {
       <Paint color="black" in={grassProgress < 6} delay={2} />
 
       <FishingRod in={grassProgress < 4} />
+
+      <Wheel in={grassProgress < 3} />
+
+      <Box in={grassProgress < 2} />
+
+      <Tire in={grassProgress < 1} />
+      <Tire in={grassProgress < 1} delay={2} />
+      <Tire in={grassProgress < 1} delay={3} />
+      <Tire in={grassProgress < 1} delay={4} />
     </div>
   );
 };
