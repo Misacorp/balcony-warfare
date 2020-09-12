@@ -8,7 +8,7 @@ import useKeyListener from './hooks/useKeyListener';
 import Controls from './Controls';
 
 const MainStructure = ({ className }) => {
-  const [grassProgress, setGrassProgress] = useState(0);
+  const [grassProgress, setGrassProgress] = useState(3);
 
   // Set up key listeners
   const decrease = useCallback(() => {

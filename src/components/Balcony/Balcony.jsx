@@ -11,6 +11,12 @@ import FishingRod from './FishingRod';
 import Wheel from './Wheel';
 import Box from './Box';
 import Tire from './Tire';
+import SquarePottedPlant from './SquarePottedPlant';
+import Palm from './Palmu';
+import Pillow from './Pillow';
+import HangingPlant from './HangingPlant';
+import CactusRed from './CactusRed';
+import CactusPurple from './CactusPurple';
 
 const BalconyStructure = ({ grassProgress, className }) => {
   return (
@@ -32,17 +38,24 @@ const BalconyStructure = ({ grassProgress, className }) => {
 
       <Paint color="red" in={grassProgress < 5} />
       <Paint color="black" in={grassProgress < 6} delay={2} />
+      <HangingPlant in={grassProgress > 4} />
 
       <FishingRod in={grassProgress < 4} />
+      <Pillow in={grassProgress > 3} />
 
       <Wheel in={grassProgress < 3} />
+      <SquarePottedPlant in={grassProgress > 2} />
 
       <Box in={grassProgress < 2} />
+      <CactusRed in={grassProgress > 1} delay={1} />
+      <CactusPurple in={grassProgress > 1} />
 
       <Tire in={grassProgress < 1} />
       <Tire in={grassProgress < 1} delay={2} />
       <Tire in={grassProgress < 1} delay={3} />
       <Tire in={grassProgress < 1} delay={4} />
+
+      <Palm in={grassProgress > 0} />
     </div>
   );
 };
