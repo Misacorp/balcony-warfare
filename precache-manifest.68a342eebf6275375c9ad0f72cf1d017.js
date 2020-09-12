@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0c46d2eb73fea39c1c1ca66a62abf55",
+    "revision": "d29e86cbbce77d88196bfeb1d1acca8b",
     "url": "https://misacorp.github.io/balcony-warfare/index.html"
   },
   {
-    "revision": "dc2f9879b2b2841467a7",
-    "url": "https://misacorp.github.io/balcony-warfare/static/js/2.768ee30b.chunk.js"
+    "revision": "f0a6b0f94d579ca2caf1",
+    "url": "https://misacorp.github.io/balcony-warfare/static/js/2.24312cd6.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "https://misacorp.github.io/balcony-warfare/static/js/2.768ee30b.chunk.js.LICENSE.txt"
+    "url": "https://misacorp.github.io/balcony-warfare/static/js/2.24312cd6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75ea16e416a5266cb5f2",
-    "url": "https://misacorp.github.io/balcony-warfare/static/js/main.e9b07442.chunk.js"
+    "revision": "173257962db5537948cc",
+    "url": "https://misacorp.github.io/balcony-warfare/static/js/main.45505184.chunk.js"
   },
   {
     "revision": "67c3fb80ec8c6cb4884f",
