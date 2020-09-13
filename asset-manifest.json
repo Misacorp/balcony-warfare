@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "https://misacorp.github.io/balcony-warfare/static/js/main.45505184.chunk.js",
-    "main.js.map": "https://misacorp.github.io/balcony-warfare/static/js/main.45505184.chunk.js.map",
+    "main.js": "https://misacorp.github.io/balcony-warfare/static/js/main.45342c3c.chunk.js",
+    "main.js.map": "https://misacorp.github.io/balcony-warfare/static/js/main.45342c3c.chunk.js.map",
     "runtime-main.js": "https://misacorp.github.io/balcony-warfare/static/js/runtime-main.488c1193.js",
     "runtime-main.js.map": "https://misacorp.github.io/balcony-warfare/static/js/runtime-main.488c1193.js.map",
     "static/js/2.24312cd6.chunk.js": "https://misacorp.github.io/balcony-warfare/static/js/2.24312cd6.chunk.js",
     "static/js/2.24312cd6.chunk.js.map": "https://misacorp.github.io/balcony-warfare/static/js/2.24312cd6.chunk.js.map",
     "index.html": "https://misacorp.github.io/balcony-warfare/index.html",
-    "precache-manifest.68a342eebf6275375c9ad0f72cf1d017.js": "https://misacorp.github.io/balcony-warfare/precache-manifest.68a342eebf6275375c9ad0f72cf1d017.js",
+    "precache-manifest.079eaddcc90ab0ac79f7c3d70a33e476.js": "https://misacorp.github.io/balcony-warfare/precache-manifest.079eaddcc90ab0ac79f7c3d70a33e476.js",
     "service-worker.js": "https://misacorp.github.io/balcony-warfare/service-worker.js",
     "static/js/2.24312cd6.chunk.js.LICENSE.txt": "https://misacorp.github.io/balcony-warfare/static/js/2.24312cd6.chunk.js.LICENSE.txt",
     "static/media/Amppeli.png": "https://misacorp.github.io/balcony-warfare/static/media/Amppeli.eafb3076.png",
@@ -20,6 +20,6 @@
   "entrypoints": [
     "static/js/runtime-main.488c1193.js",
     "static/js/2.24312cd6.chunk.js",
-    "static/js/main.45505184.chunk.js"
+    "static/js/main.45342c3c.chunk.js"
   ]
 }
